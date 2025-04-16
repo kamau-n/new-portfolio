@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "This is a system that allows users to run all  school operations smoothly, it encompassed all of the crud operations .",
     technologies: ["React.js", "Spring Boot", "Next js"],
     imageUrl:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2019-03-25.png?alt=media&token=34c7f132-4fdb-424b-8033-02971555b39a",
     githubUrl: "https://github.com/kamau-n/school",
     liveUrl: "https://school.kamauharrison.co.ke",
     category: "web",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       "Created a scalable solution for stock tracking, with real-time updates and comprehensive reporting features.",
     technologies: ["React Native", "MongoDB", "Express"],
     imageUrl:
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-55-45.png?alt=media&token=d9abd45d-6f59-46c0-88e2-7f6db9e3dcf9",
     githubUrl: "https://github.com",
     liveUrl: "https://store.kamauharrison.co.ke",
     category: "mobile",
@@ -68,8 +68,8 @@ export const projects: Project[] = [
       "Showcased technical skills and projects using modern web technologies for an optimized user experience.",
     technologies: ["Next.js", "Tailwind CSS", "React", "Framer Motion"],
     imageUrl:
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2344&q=80",
-    githubUrl: "https://github.com/jameskuria/portfolio",
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-56-35.png?alt=media",
+    githubUrl: "https://github.com/kamau-n/portfolio",
     liveUrl: "https://kamauharrison.co.ke",
     category: "web",
     featured: true,
@@ -81,9 +81,9 @@ export const projects: Project[] = [
       "Designed a money transfer app with secure transactions, enabling seamless payments and transfers.",
     technologies: ["React Native", "Firebase", "Redux"],
     imageUrl:
-      "https://images.unsplash.com/photo-1544200175-cfacb687916f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    githubUrl: "https://github.com/jameskuria/caristopay",
-    liveUrl: "https://fintrack.kamauharrison.co.ke",
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FWhatsApp%20Image%202025-04-16%20at%206.45.46%20PM.jpeg?alt=media",
+    githubUrl: "https://github.com/kamau-n/financeApp",
+    liveUrl: "/downloads",
     category: "mobile",
     featured: true,
   },
