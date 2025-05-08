@@ -140,7 +140,9 @@ const Navbar = () => {
               <Button
                 size="sm"
                 className="ml-2 bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-600 hover:to-teal-500 text-white">
-                Resume
+                <a href="https://drive.google.com/file/d/1ZliBtdOI1Ok0lIzNdGDwRG3kK_GbnWFa/view?usp=drive_link">
+                  Resume
+                </a>
                 <ChevronDown className="ml-1 h-4 w-4" />
               </Button>
             </div>
@@ -220,7 +222,10 @@ const Navbar = () => {
                     <Button
                       size="sm"
                       className="w-full bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-600 hover:to-teal-500">
-                      Download Resume
+                      <a href="https://drive.google.com/file/d/1ZliBtdOI1Ok0lIzNdGDwRG3kK_GbnWFa/view?usp=drive_link">
+                        {" "}
+                        Download Resume{" "}
+                      </a>
                     </Button>
                   </div>
                 </div>

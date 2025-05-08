@@ -96,7 +96,9 @@ const About = () => {
                 <span className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <span className="relative flex items-center">
                   <FileText className="mr-2 h-4 w-4" />
-                  Download CV
+                  <a href="https://drive.google.com/file/d/1ZliBtdOI1Ok0lIzNdGDwRG3kK_GbnWFa/view?usp=drive_link">
+                    Download CV
+                  </a>
                   <ExternalLink className="ml-2 h-3 w-3" />
                 </span>
               </Button>

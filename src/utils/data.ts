@@ -36,19 +36,19 @@ export const projects: Project[] = [
     category: "web",
     featured: false,
   },
-    {
-      id: 2,
-      title: "Service Connect",
-      description:
-        "This is an application that assist service provider and service seekers connnect.",
-      technologies: ["React Native", "Firebase", "Expo 53","Typescript"],
-      imageUrl:
-        "https://drive.google.com/file/d/18a-8vDNJw2sAEUEJdYP78xsZ99oINX3E/view?usp=drive_link",
-      githubUrl: "https://github.com/kamau-n/service-app",
-      liveUrl: "kamauharrison.co.ke/",
-      category: "app",
-      feature:true,
-    },
+  {
+    id: 2,
+    title: "Service Connect",
+    description:
+      "This is an application that assist service provider and service seekers connnect.",
+    technologies: ["React Native", "Firebase", "Expo 53", "Typescript"],
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FWhatsApp%20Image%202025-05-08%20at%2011.16.37%20PM.jpeg?alt=media&token=861b87de-296e-4dee-9beb-a48563b9f394",
+    githubUrl: "https://github.com/kamau-n/service-app",
+    liveUrl: "kamauharrison.co.ke/",
+    category: "mobile",
+    featured: true,
+  },
   {
     id: 3,
     title: "Ecommerce Website",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       "Showcased technical skills and projects using modern web technologies for an optimized user experience.",
     technologies: ["Next.js", "Tailwind CSS", "React", "Framer Motion"],
     imageUrl:
-      "https://drive.google.com/file/d/18a-8vDNJw2sAEUEJdYP78xsZ99oINX3E/view?usp=drive_link",
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-56-35.png?alt=media&token=d5d06d85-0c0e-4e4b-b8e1-da8e4860b8e9",
     githubUrl: "https://github.com/kamau-n/portfolio",
     liveUrl: "https://kamauharrison.co.ke",
     category: "web",
