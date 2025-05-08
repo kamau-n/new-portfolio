@@ -34,7 +34,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/kamau-n/school",
     liveUrl: "https://school.kamauharrison.co.ke",
     category: "web",
-    featured: true,
+    featured: false,
   },
     {
       id: 2,
@@ -47,6 +47,7 @@ export const projects: Project[] = [
       githubUrl: "https://github.com/kamau-n/service-app",
       liveUrl: "kamauharrison.co.ke/",
       category: "app",
+      feature:true,
     },
   {
     id: 3,
