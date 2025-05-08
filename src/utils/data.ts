@@ -36,18 +36,18 @@ export const projects: Project[] = [
     category: "web",
     featured: true,
   },
-  //   {
-  //     id: 2,
-  //     title: "Maven Mentorship",
-  //     description:
-  //       "Built a mentorship platform to connect professionals and mentees, facilitating knowledge sharing and career growth.",
-  //     technologies: ["Next.js", "PostgreSQL", "Tailwind CSS"],
-  //     imageUrl:
-  //       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-  //     githubUrl: "https://github.com/jameskuria/maven-mentorship",
-  //     liveUrl: "https://mavenmentorship.org/",
-  //     category: "web",
-  //   },
+    {
+      id: 2,
+      title: "Service Connect",
+      description:
+        "This is an application that assist service provider and service seekers connnect.",
+      technologies: ["React Native", "Firebase", "Expo 53","Typescript"],
+      imageUrl:
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      githubUrl: "https://github.com/kamau-n/service-app",
+      liveUrl: "kamauharrison.co.ke/",
+      category: "app",
+    },
   {
     id: 3,
     title: "Ecommerce Website",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Showcased technical skills and projects using modern web technologies for an optimized user experience.",
     technologies: ["Next.js", "Tailwind CSS", "React", "Framer Motion"],
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-56-35.png?alt=media",
+      "https://drive.google.com/file/d/18a-8vDNJw2sAEUEJdYP78xsZ99oINX3E/view?usp=drive_link",
     githubUrl: "https://github.com/kamau-n/portfolio",
     liveUrl: "https://kamauharrison.co.ke",
     category: "web",
