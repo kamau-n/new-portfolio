@@ -73,7 +73,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/kamau-n/portfolio",
     liveUrl: "https://kamauharrison.co.ke",
     category: "web",
-    featured: true,
+    featured: false,
   },
   {
     id: 5,
