@@ -102,6 +102,19 @@ export const projects: Project[] = [
     category: "backend",
     featured: false,
   },
+    {
+    id: 7,
+    title: "Kenya Trails",
+    description:
+      "This is a site which event planner and adventures meeet and plan events, it automate the whole process of creating , booking and paying for events such as hiking,travels etc.",
+    technologies: ["Next", "Typescript", "Tailwind", "Shadcn"],
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-05-12%2005-21-23.png?alt=media&token=8529d67a-50aa-46c1-b9d8-9dd985bde587",
+    githubUrl: "https://github.com/kamau-n/kenya-trails",
+    liveUrl: "travel.kamauharrison.co.ke/",
+    category: "web",
+    featured: true,
+  },
 ];
 
 export const skills: Skill[] = [
