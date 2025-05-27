@@ -7,7 +7,7 @@ export interface Project {
   githubUrl: string;
   featured: boolean;
   liveUrl: string;
-  category: "mobile" | "web" | "backend";
+  category: "mobile" | "web" | "backend" | "data" | "ai";
 }
 
 export interface Skill {
@@ -47,6 +47,19 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/kamau-n/service-app",
     liveUrl: "kamauharrison.co.ke/",
     category: "mobile",
+    featured: false,
+  },
+    {
+    id: 8,
+    title: "Content Genie",
+    description:
+      "This is an  AI content agent that analyzes, optimizes, and improves your website content for better SEO, readability, and user engagement..",
+    technologies: ["Open AI", "Firebase", "Next", "Typescript"],
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FWhatsApp%20Image%202025-05-08%20at%2011.16.37%20PM.jpeg?alt=media&token=861b87de-296e-4dee-9beb-a48563b9f394",
+    githubUrl: "https://github.com/kamau-n/content-genie-ai-agent",
+    liveUrl: "contentgenie.kamauharrison.co.ke/",
+    category: "ai",
     featured: true,
   },
   {
