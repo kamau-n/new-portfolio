@@ -57,7 +57,7 @@ export const projects: Project[] = [
     technologies: ["Open AI", "Firebase", "Next", "Typescript"],
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-05-27%2011-53-56.png?alt=media&token=ba39eb96-90fd-4685-a4aa-7408faea29d3",
-    githubUrl: "https://github.com/kamau-n/content-genie-ai-agent",
+    githubUrl: "/https://github.com/kamau-n/content-genie-ai-agent",
     liveUrl: "contentgenie.kamauharrison.co.ke/",
     category: "ai",
     featured: true,
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-55-45.png?alt=media&token=d9abd45d-6f59-46c0-88e2-7f6db9e3dcf9",
     githubUrl: "https://github.com",
-    liveUrl: "https://store.kamauharrison.co.ke",
+    liveUrl: "/https://store.kamauharrison.co.ke",
     category: "mobile",
     featured: false,
   },
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-56-35.png?alt=media&token=d5d06d85-0c0e-4e4b-b8e1-da8e4860b8e9",
     githubUrl: "https://github.com/kamau-n/portfolio",
-    liveUrl: "https://kamauharrison.co.ke",
+    liveUrl: "/https://kamauharrison.co.ke",
     category: "web",
     featured: false,
   },
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-05-12%2005-21-23.png?alt=media&token=8529d67a-50aa-46c1-b9d8-9dd985bde587",
     githubUrl: "https://github.com/kamau-n/kenya-trails",
-    liveUrl: "travel.kamauharrison.co.ke/",
+    liveUrl: "/kenyatrails.co.ke",
     category: "web",
     featured: true,
   },
