@@ -31,14 +31,14 @@ const About = () => {
               <p className="text-lg">
                 I'm Harrison Kamau, a software engineer based in Nairobi, Kenya
                 with over 5 years of experience crafting digital solutions. My
-                journey in software development began in 2018, and since then,
+                journey in software development began in 2019, and since then,
                 I've had the privilege of working on a diverse range of projects
                 across various domains.
               </p>
               <p>
                 I specialize in building scalable web and mobile applications
                 using modern technologies like TypeScript, JavaScript, React
-                Native, and various backend frameworks. My approach to
+                Native and various backend frameworks. My approach to
                 development focuses on creating clean, maintainable code that
                 delivers exceptional user experiences.
               </p>
@@ -71,7 +71,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">+254 700262226</p>
+                    <p className="font-medium">+254 759155650</p>
                   </div>
                 </CardContent>
               </Card>
@@ -83,7 +83,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">kamau629@gmail.com</p>
+                    <p className="font-medium">kamaun629@gmail.com</p>
                   </div>
                 </CardContent>
               </Card>
