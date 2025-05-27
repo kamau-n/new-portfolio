@@ -58,7 +58,7 @@ export const projects: Project[] = [
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-05-27%2011-53-56.png?alt=media&token=ba39eb96-90fd-4685-a4aa-7408faea29d3",
     githubUrl: "/https://github.com/kamau-n/content-genie-ai-agent",
-    liveUrl: "https://contentgenie.kamauharrison.co.ke/",
+    liveUrl: "https://www.contentgenie.kamauharrison.co.ke/",
     category: "ai",
     featured: true,
   },
