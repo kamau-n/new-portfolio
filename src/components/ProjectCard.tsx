@@ -70,6 +70,8 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               {project.category === "web" && "Web Development"}
               {project.category === "mobile" && "Mobile App"}
               {project.category === "backend" && "Backend"}
+              {project.category === "ai" && "AI"}
+              {project.category === "data" && "Data"}
             </Badge>
           </div>
         </div>
