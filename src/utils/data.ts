@@ -194,6 +194,12 @@ export const skills: Skill[] = [
 
 export const experience = [
   {
+    title:"Software Engineer",
+    company:"None".
+      period:"April 2025 - Present",
+    description:"Worked with both local and international clients, by assisting them turn their ideas into products, applicatons ,AI agents.",
+  },
+  {
     title: "Software Engineer",
     company: "Rensoft Solutions Ltd, Nairobi, Kenya",
     period: "Mar 2024 - Mar 2025",
