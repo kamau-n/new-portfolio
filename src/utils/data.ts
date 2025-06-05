@@ -149,6 +149,9 @@ export const skills: Skill[] = [
   { name: "TypeScript", icon: "code", category: "languages" },
   { name: "HTML", icon: "file-code", category: "languages" },
   { name: "CSS", icon: "paintbrush", category: "languages" },
+  { name: "Golang", icon: "paintbrush", category: "languages" },
+    { name: "PHP", icon: "paintbrush", category: "languages" },
+  
 
   // Frameworks/Tools
   { name: "React.js", icon: "component", category: "frameworks" },
@@ -158,6 +161,9 @@ export const skills: Skill[] = [
   { name: "Node.js", icon: "server", category: "frameworks" },
   { name: "TailwindCSS", icon: "paintbrush", category: "frameworks" },
   { name: "Nginx", icon: "server", category: "frameworks" },
+    { name: "Gin", icon: "server", category: "frameworks" },
+    { name: "Angular", icon: "server", category: "frameworks" },
+  
 
   // Databases
   { name: "MSSQL", icon: "database", category: "databases" },
@@ -172,6 +178,10 @@ export const skills: Skill[] = [
   { name: "Jenkins", icon: "refresh-ccw", category: "devops" },
   { name: "GitHub Actions", icon: "git-merge", category: "devops" },
   { name: "Linux Administration", icon: "terminal", category: "devops" },
+   { name: "Docker", icon: "docker", category: "devops" },
+     { name: "Kurbenetes", icon: "docker", category: "devops" },
+  
+  
 
   // APIs
   { name: "REST", icon: "network", category: "apis" },
