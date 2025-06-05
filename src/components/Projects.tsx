@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 import SlideIn from "./transitions/slide-in";
 import ProjectCard from "./ProjectCard";
-import { projects } from "@/utils/data";
+import { getProjects } from "@/lib/services";
+import { Project } from "@/utils/types";
 
-// Sample projects data - replace with your actual data
 const categories = [
   { id: "all", label: "All Projects", icon: <Layers className="h-4 w-4" /> },
   { id: "web", label: "Web Development", icon: <Code className="h-4 w-4" /> },
@@ -32,6 +32,23 @@ type Category = (typeof categories)[number]["id"];
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("all");
   const [showAll, setShowAll] = useState(false);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const projectsData = await getProjects();
+        setProjects(projectsData);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProjects();
+  }, []);
 
   // Filter projects based on active category
   const filteredProjects =
@@ -43,6 +60,20 @@ const Projects = () => {
   const displayedProjects = showAll
     ? filteredProjects
     : filteredProjects.filter((project) => project.featured);
+
+  if (loading) {
+    return (
+      <section
+        id="projects\"
+        className="py-24 md:py-32 relative bg-slate-50 dark:bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

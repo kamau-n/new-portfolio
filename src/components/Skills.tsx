@@ -1,6 +1,4 @@
-"use client";
-
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -30,230 +28,8 @@ import {
   Zap,
 } from "lucide-react";
 import SlideIn from "./transitions/slide-in";
-
-// Sample skills data - replace with your actual data
-const skills = [
-  {
-    category: "languages",
-    name: "JavaScript",
-    icon: "code",
-    level: 90,
-    featured: true,
-  },
-  {
-    category: "languages",
-    name: "TypeScript",
-    icon: "file-code",
-    level: 85,
-    featured: true,
-  },
-  {
-    category: "languages",
-    name: "Python",
-    icon: "terminal",
-    level: 80,
-    featured: false,
-  },
-  {
-    category: "languages",
-    name: "HTML/CSS",
-    icon: "paintbrush",
-    level: 95,
-    featured: false,
-  },
-  {
-    category: "languages",
-    name: "SQL",
-    icon: "database",
-    level: 75,
-    featured: false,
-  },
-  {
-    category: "frameworks",
-    name: "React",
-    icon: "component",
-    level: 95,
-    featured: true,
-  },
-  {
-    category: "frameworks",
-    name: "Next.js",
-    icon: "server",
-    level: 90,
-    featured: true,
-  },
-  {
-    category: "frameworks",
-    name: "Node.js",
-    icon: "server",
-    level: 85,
-    featured: true,
-  },
-  {
-    category: "frameworks",
-    name: "Express",
-    icon: "server",
-    level: 80,
-    featured: false,
-  },
-  {
-    category: "frameworks",
-    name: "Tailwind CSS",
-    icon: "paintbrush",
-    level: 90,
-    featured: true,
-  },
-  {
-    category: "frameworks",
-    name: "Redux",
-    icon: "refresh-ccw",
-    level: 85,
-    featured: false,
-  },
-  {
-    category: "frameworks",
-    name: "React Native",
-    icon: "smartphone",
-    level: 75,
-    featured: false,
-  },
-  {
-    category: "databases",
-    name: "MongoDB",
-    icon: "database",
-    level: 85,
-    featured: true,
-  },
-  {
-    category: "databases",
-    name: "PostgreSQL",
-    icon: "database",
-    level: 80,
-    featured: false,
-  },
-  {
-    category: "databases",
-    name: "Firebase",
-    icon: "flame",
-    level: 85,
-    featured: true,
-  },
-  {
-    category: "databases",
-    name: "Redis",
-    icon: "database",
-    level: 70,
-    featured: false,
-  },
-  {
-    category: "devops",
-    name: "Docker",
-    icon: "container",
-    level: 75,
-    featured: false,
-  },
-  {
-    category: "devops",
-    name: "Git",
-    icon: "git-branch",
-    level: 90,
-    featured: true,
-  },
-  {
-    category: "devops",
-    name: "CI/CD",
-    icon: "git-merge",
-    level: 80,
-    featured: false,
-  },
-  {
-    category: "devops",
-    name: "AWS",
-    icon: "cloud",
-    level: 70,
-    featured: false,
-  },
-  {
-    category: "apis",
-    name: "RESTful APIs",
-    icon: "network",
-    level: 90,
-    featured: true,
-  },
-  {
-    category: "apis",
-    name: "GraphQL",
-    icon: "network",
-    level: 80,
-    featured: false,
-  },
-  {
-    category: "collaboration",
-    name: "Agile",
-    icon: "refresh-ccw",
-    level: 85,
-    featured: false,
-  },
-  {
-    category: "collaboration",
-    name: "Jira",
-    icon: "trello",
-    level: 80,
-    featured: false,
-  },
-  {
-    category: "collaboration",
-    name: "GitHub",
-    icon: "git-branch",
-    level: 90,
-    featured: true,
-  },
-];
-
-const getIcon = (iconName: string) => {
-  switch (iconName) {
-    case "database":
-      return <Database className="h-4 w-4" />;
-    case "server":
-      return <Server className="h-4 w-4" />;
-    case "smartphone":
-      return <Smartphone className="h-4 w-4" />;
-    case "code":
-      return <Code className="h-4 w-4" />;
-    case "paintbrush":
-      return <Paintbrush className="h-4 w-4" />;
-    case "coffee":
-      return <Coffee className="h-4 w-4" />;
-    case "network":
-      return <Network className="h-4 w-4" />;
-    case "git-merge":
-      return <GitMerge className="h-4 w-4" />;
-    case "flame":
-      return <Flame className="h-4 w-4" />;
-    case "git-branch":
-      return <GitBranch className="h-4 w-4" />;
-    case "container":
-      return <Container className="h-4 w-4" />;
-    case "cloud":
-      return <Cloud className="h-4 w-4" />;
-    case "refresh-ccw":
-      return <RefreshCcw className="h-4 w-4" />;
-    case "test-tube":
-      return <TestTube className="h-4 w-4" />;
-    case "file-code":
-      return <FileCode className="h-4 w-4" />;
-    case "terminal":
-      return <Terminal className="h-4 w-4" />;
-    case "component":
-      return <Component className="h-4 w-4" />;
-    case "users":
-      return <Users className="h-4 w-4" />;
-    case "trello":
-      return <Trello className="h-4 w-4" />;
-    default:
-      return <Code className="h-4 w-4" />;
-  }
-};
+import { getSkills } from "@/lib/services";
+import { Skill } from "@/utils/types";
 
 const categories = [
   { id: "featured", label: "Featured", icon: <Star className="h-4 w-4" /> },
@@ -277,9 +53,53 @@ const categories = [
   },
 ];
 
+const getIcon = (iconName: string) => {
+  const icons = {
+    database: Database,
+    server: Server,
+    smartphone: Smartphone,
+    code: Code,
+    paintbrush: Paintbrush,
+    coffee: Coffee,
+    network: Network,
+    "git-merge": GitMerge,
+    flame: Flame,
+    "git-branch": GitBranch,
+    container: Container,
+    cloud: Cloud,
+    "refresh-ccw": RefreshCcw,
+    "test-tube": TestTube,
+    "file-code": FileCode,
+    terminal: Terminal,
+    component: Component,
+    users: Users,
+    trello: Trello,
+  };
+
+  const Icon = icons[iconName as keyof typeof icons] || Code;
+  return <Icon className="h-4 w-4" />;
+};
+
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("featured");
+  const [skills, setSkills] = useState<Skill[]>([]);
+  const [loading, setLoading] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const fetchSkills = async () => {
+      try {
+        const skillsData = await getSkills();
+        setSkills(skillsData);
+      } catch (error) {
+        console.error("Error fetching skills:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchSkills();
+  }, []);
 
   // Filter skills based on active category
   const filteredSkills =
@@ -289,6 +109,18 @@ const Skills = () => {
 
   // Sort skills by level (highest first)
   const sortedSkills = [...filteredSkills].sort((a, b) => b.level - a.level);
+
+  if (loading) {
+    return (
+      <section className="py-24 md:py-32 relative bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
@@ -349,10 +181,7 @@ const Skills = () => {
         {/* Skills grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {sortedSkills.map((skill, index) => (
-            <SlideIn
-              key={`${skill.category}-${skill.name}`}
-              direction="up"
-              delay={0.2 + index * 0.05}>
+            <SlideIn key={skill.id} direction="up" delay={0.2 + index * 0.05}>
               <Card className="overflow-hidden border-none shadow-md bg-white dark:bg-slate-900 hover:shadow-lg transition-all duration-300">
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-4">
