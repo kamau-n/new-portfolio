@@ -128,6 +128,18 @@ export const projects: Project[] = [
     category: "web",
     featured: true,
   },
+  {
+    id: 9,
+    title: "Reviewly",
+    description:
+      "This is a site that helps small/local businesses generate and share custom Google review links (with optional QR codes, email templates, and tracking), so they can get more positive reviews.",
+    technologies: ["Next", "Typescript", "Tailwind", "Shadcn","Paystack"],
+    imageUrl:"https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-06-05%2018-04-56.png?alt=media&token=746c8b7d-ad7a-4720-8a3b-c7a66c2fd44f",
+    githubUrl: "https://github.com/kamau-n/reviewly",
+    liveUrl: "https://reviewly.kamauharrison.co.ke",
+    category: "web",
+    featured: true,
+  },
 ];
 
 export const skills: Skill[] = [
