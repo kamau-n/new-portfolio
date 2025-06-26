@@ -64,14 +64,14 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Ecommerce Website",
+    title: "Estore",
     description:
-      "Created a scalable solution for stock tracking, with real-time updates and comprehensive reporting features.",
-    technologies: ["React Native", "MongoDB", "Express"],
+      "This is a online eccomerce application for selling products , basically it is an online store.",
+    technologies: ["Next", "Springboot", "Tailwinf","Shadcn"],
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-04-16%2018-55-45.png?alt=media&token=d9abd45d-6f59-46c0-88e2-7f6db9e3dcf9",
-    githubUrl: "https://github.com",
-    liveUrl: "https://store.kamauharrison.co.ke",
+      "https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-06-26%2018-59-39.png?alt=media&token=2b664af9-72c3-4ce5-a825-087d9dcb499d",
+    githubUrl: "https://github.com/kamau-n",
+    liveUrl: "https://estore.kamauharrison.co.ke",
     category: "mobile",
     featured: false,
   },
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     title: "Reviewly",
     description:
       "This is a site that helps small/local businesses generate and share custom Google review links (with optional QR codes, email templates, and tracking), so they can get more positive reviews.",
-    technologies: ["Next", "Typescript", "Tailwind", "Shadcn","Paystack"],
+    technologies: ["Next", "Typescript", "Springboot","Tailwind", "Shadcn","Paystack"],
     imageUrl:"https://firebasestorage.googleapis.com/v0/b/ecomerce-site-d6b4a.appspot.com/o/assets%2FScreenshot%20from%202025-06-05%2018-04-56.png?alt=media&token=746c8b7d-ad7a-4720-8a3b-c7a66c2fd44f",
     githubUrl: "https://github.com/kamau-n/reviewly",
     liveUrl: "https://reviewly.kamauharrison.co.ke",
@@ -171,6 +171,7 @@ export const skills: Skill[] = [
   { name: "MySQL", icon: "database", category: "databases" },
   { name: "MongoDB", icon: "database", category: "databases" },
   { name: "Firebase", icon: "flame", category: "databases" },
+  
 
   // DevOps
   { name: "Git", icon: "git-branch", category: "devops" },
